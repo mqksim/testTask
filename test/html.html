@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/028a4f9e46.js" crossorigin="anonymous"></script>
+
+    <title>TEST ANUITEX</title>
+</head>
+<body>
+
+
+<!--Модальное для добавления товара-->
+<div class="modal" id="add__good" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title ">Добавить товар</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="add__good-popup">
+                    <div class="row">
+                        <form class="col-md-6" action="" method="submit" onSubmit="return checkall()" name="addForm" id="addForm">
+                            <label for="add__good-img" >Ссылка на изображение (jpg)</label>
+                            <input id="add__good-img"  type="text">
+                            <span style="color:red" id="imgF"></span>
+                            <label for="add__good-name">Название товара</label>
+                            <input id="add__good-name" type="text">
+                            <span style="color:red" id="nameF"></span>
+                            <label for="add__good-price">Цена</label>
+                            <input id="add__good-price" type="text">
+                            <span style="color:red" id="priceF"></span>
+                        </form>
+                        <div class="col-md-6" id="preview-good"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="add__good-btn">Добавить товар</button>
+                <button type="button" class="btn btn-primary" id="preview__good-btn">Предпросмотр</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Модальное для редактирования товара-->
+
+<div class="modal" id="edit__good" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title ">Редактировать товар</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="edit__good-popup">
+                    <label for="edit__good-img" class="col-md-6">Ссылка на изображение</label>
+                    <input id="edit__good-img" class="col-md-6" type="text">
+                    <label for="edit__good-name" class="col-md-6">Название товара</label>
+                    <input id="edit__good-name" class="col-md-6" type="text">
+                    <label for="edit__good-price" class="col-md-6">Цена</label>
+                    <input id="edit__good-price" class="col-md-6" type="text">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal" id="edit__good-btn">Сохранить
+                    изменения
+                </button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Отменить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="main-content container-fluid col-md-9">
+    <div class="row top-panel">
+        <h1 class="col-md-9">Каталог товаров</h1>
+        <button class="btn btn-primary btn-md col-md-3 " data-target="#add__good" data-toggle="modal">Добавить товар
+        </button>
+    </div>
+
+    <div class="row" id="cards__list">
+
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+</html>

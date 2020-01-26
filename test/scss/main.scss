@@ -1,0 +1,65 @@
+label {
+  display: block;
+}
+
+input {
+  &:valid {
+    border-color: green;
+  }
+
+  &:invalid {
+    border-color: red;
+  }
+}
+
+span {
+  display: block;
+}
+
+#addForm {
+  text-align: center;
+}
+
+.main-content {
+  font-size: 16px;
+  .top-panel {
+    margin-bottom: 100px;
+  }
+}
+
+
+#cards__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  padding: 30px;
+  .card__interface {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    h3 {
+      font-size: 12px;
+    }
+    & i {
+      opacity: 0.2;
+      cursor: pointer;
+    }
+    & i:hover {
+      opacity: 1;
+    }
+  }
+  .card__info {
+    display: flex;
+
+  }
+  img {
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+  }
+  .card__price {
+    font-size: 18px;
+  }
+}

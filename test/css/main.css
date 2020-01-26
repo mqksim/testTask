@@ -1,0 +1,47 @@
+label {
+  display: block; }
+
+input:valid {
+  border-color: green; }
+
+input:invalid {
+  border-color: red; }
+
+span {
+  display: block; }
+
+#addForm {
+  text-align: center; }
+
+.main-content {
+  font-size: 16px; }
+  .main-content .top-panel {
+    margin-bottom: 100px; }
+
+#cards__list {
+  display: flex;
+  justify-content: space-around; }
+
+.card {
+  padding: 30px; }
+  .card .card__interface {
+    position: absolute;
+    right: 15px;
+    top: 15px; }
+    .card .card__interface h3 {
+      font-size: 12px; }
+    .card .card__interface i {
+      opacity: 0.2;
+      cursor: pointer; }
+    .card .card__interface i:hover {
+      opacity: 1; }
+  .card .card__info {
+    display: flex; }
+  .card img {
+    margin: 20px auto;
+    width: 200px;
+    height: 200px; }
+  .card .card__price {
+    font-size: 18px; }
+
+/*# sourceMappingURL= /main.css.map */
