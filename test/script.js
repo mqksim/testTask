@@ -5,9 +5,9 @@ let goods = [
 // Для теста вызови testObjToLocal() в консоли браузера
 
 let testArr = [
-    {name: "IPhone 11", img:"promax.jpg", price: 1700},
-    {name: "IPhone 7+", img:"7plus.jpg", price: 500},
-    {name: "IPhone XR", img:"xr.jpg", price: 700}
+    {name: "IPhone 11", img:"promax.jpg", price: 1700, index: 0},
+    {name: "IPhone 7+", img:"7plus.jpg", price: 500, index: 1},
+    {name: "IPhone XR", img:"xr.jpg", price: 700, index: 2}
 ];
 
 function testObjToLocal() {
